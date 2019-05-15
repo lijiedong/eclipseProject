@@ -1,0 +1,8 @@
+#Tomcat publish data
+#Fri Mar 29 16:26:10 CST 2019
+org.eclipse.jst.jee.server\:struts2_day04=D\:\\apache-tomcat-7.0.52\\webapps\\struts2_day04
+org.eclipse.jst.jee.server\:struts2_day03=D\:\\apache-tomcat-7.0.52\\webapps\\struts2_day03
+org.eclipse.jst.jee.server\:spring_day04=D\:\\apache-tomcat-7.0.52\\webapps\\spring_day04
+org.eclipse.jst.jee.server\:crm=D\:\\apache-tomcat-7.0.52\\webapps\\crm
+org.eclipse.jst.jee.server\:/binary\:D\:\\project\\eclipseproject\\spring_day04\\WebContent\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE.jar=D\:\\apache-tomcat-7.0.52\\webapps\\spring_day04\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:D\:\\project\\eclipseproject\\crm\\WebContent\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE.jar=D\:\\apache-tomcat-7.0.52\\webapps\\crm\\WEB-INF\\lib\\spring-web-4.2.4.RELEASE.jar

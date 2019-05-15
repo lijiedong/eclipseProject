@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;TwoStackQueue&apos; to &apos;twostackqueue&apos;&#x0D;&#x0A;- Original project: &apos;AlgorithmCode&apos;&#x0D;&#x0A;- Original element: &apos;AlgorithmCode/src/TwoStackQueue&apos;&#x0D;&#x0A;- Renamed element: &apos;AlgorithmCode/src/twostackqueue&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;TwoStackQueue&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;TwoStackQueue" name="twostackqueue" qualified="false" references="true" stamp="1551698133384" textual="false" version="1.0"/>
+</session>

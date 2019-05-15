@@ -1,0 +1,14 @@
+package testComparator;
+
+public class TestComparator {
+	public class Person implements Comparable<Person> {
+		int age;
+
+		@Override
+		public int compareTo(Person arg0) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+
+	}
+}

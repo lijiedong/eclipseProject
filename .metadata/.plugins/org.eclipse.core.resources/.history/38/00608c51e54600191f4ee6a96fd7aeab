@@ -1,0 +1,24 @@
+package stringToInteger;
+
+import org.junit.Test;
+
+public class StringToInteger {
+	@Test
+	public void test() {
+		myAtoi("  se sd ");
+	}
+
+	public int myAtoi(String str) {
+		str = str.trim();
+		int len = 0;
+		// 遍历字符串
+		while (len < str.length()) {
+			// 先找到第一个负号或者数字字符
+			while (str.charAt(len) < 48 || str.charAt(len) > 57) {
+
+			}
+		}
+
+		return 0;
+	}
+}

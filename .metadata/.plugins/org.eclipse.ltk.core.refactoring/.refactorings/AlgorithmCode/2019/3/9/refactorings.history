@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.dlj.stack.getMIn&apos; to &apos;com.dlj.stack.getMin&apos;&#x0D;&#x0A;- Original project: &apos;AlgorithmCode&apos;&#x0D;&#x0A;- Original element: &apos;AlgorithmCode/src/com.dlj.stack.getMIn&apos;&#x0D;&#x0A;- Renamed element: &apos;AlgorithmCode/src/com.dlj.stack.getMin&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.dlj.stack.getMIn&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.dlj.stack.getMIn" name="com.dlj.stack.getMin" qualified="false" references="true" stamp="1551445858901" textual="false" version="1.0"/>
+</session>

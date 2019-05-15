@@ -1,0 +1,11 @@
+package stringToInteger;
+
+public class StringToInteger {
+	public void test() {
+
+	}
+
+	public int myAtoi(String str) {
+		return 0;
+	}
+}

@@ -1,0 +1,15 @@
+package testComparator;
+
+public class Person implements Comparable<Person> {
+	int age;
+
+	public Person(int age) {
+		this.age = age;
+	}
+
+	@Override
+	public int compareTo(Person person) {
+		// TODO Auto-generated method stub
+		return person.age - this.age;
+	}
+}

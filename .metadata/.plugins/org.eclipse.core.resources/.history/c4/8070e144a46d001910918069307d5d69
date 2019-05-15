@@ -1,0 +1,7 @@
+package testComparator;
+
+import java.util.Comparator;
+
+public class myComparator implements Comparator<Person> {
+
+}

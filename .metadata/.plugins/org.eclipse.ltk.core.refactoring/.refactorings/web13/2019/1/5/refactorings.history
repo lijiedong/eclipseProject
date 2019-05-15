@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DataSourceUtils.java&apos; to &apos;web18/src/com.dlj.utils&apos;&#x0D;&#x0A;- Original project: &apos;web13&apos;&#x0D;&#x0A;- Destination element: &apos;web18/src/com.dlj.utils&apos;&#x0D;&#x0A;- Original element: &apos;com.xjtu.utils.DataSourceUtils.java&apos;" description="Copy compilation unit" destination="=web18/src&lt;com.dlj.utils" element1="/src&lt;com.xjtu.utils{DataSourceUtils.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1548680222359" units="1" version="1.0"/>
+</session>

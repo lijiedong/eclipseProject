@@ -1,0 +1,9 @@
+
+public class t1 {
+	private void mian() {
+		// TODO Auto-generated method stub
+		String test = "abc";
+		test = test + test;
+		System.out.println(test);
+	}
+}

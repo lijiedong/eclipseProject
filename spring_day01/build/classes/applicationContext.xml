@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 把对象交给spring -->
+	<!-- Bean元素：使用该元素描述需要Spring管理的对象
+		name属性：给被管理的对象起个名字，获得对象时根据该名称获得对象，名称可以重复，可以使用特殊字符
+		class属性：被管理对象的完整类名
+		id属性：与name属性一样，名称不可重复，不能使用特殊字符
+	
+	 -->
+	<!-- 创建方式一： -->
+    <bean id="user" class="com.dlj.entity.User">
+    </bean>
+	<import resource="com/dlj/b_create/applicationContext.xml"></import>
+</beans>

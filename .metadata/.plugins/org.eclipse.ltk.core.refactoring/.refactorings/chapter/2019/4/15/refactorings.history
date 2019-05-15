@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;SqlSessionFactoryUtil.java&apos; to &apos;mybatisDemo/src/com.dlj.utils&apos;&#x0D;&#x0A;- Original project: &apos;chapter&apos;&#x0D;&#x0A;- Destination element: &apos;mybatisDemo/src/com.dlj.utils&apos;&#x0D;&#x0A;- Original element: &apos;com.learn.chapter2.util.SqlSessionFactoryUtil.java&apos;" description="Copy compilation unit" destination="=mybatisDemo/src&lt;com.dlj.utils" element1="/src&lt;com.learn.chapter2.util{SqlSessionFactoryUtil.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1554620380769" units="1" version="1.0"/>
+</session>

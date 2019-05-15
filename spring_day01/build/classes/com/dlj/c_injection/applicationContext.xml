@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- set方法注入 -->
+    <bean id="user" class="com.dlj.entity.User">
+    	<!-- 为User对象中的name属性注入tom作为值 -->
+    	<property name="name" value="tom"></property>
+    	<property name="age" value="18"></property>
+    	<!-- 为car属性注入下方配置的car对象 -->
+    	<property name="car" ref="car"></property>
+    </bean>
+    
+    <!-- 将car对象配置到容器中 -->
+    <bean name="car" class="com.dlj.entity.Car">
+    	<property name="name" value="兰博基尼"></property>
+    	<property name="color" value="黄色"></property>
+    </bean>
+    <!-- 构造方法注入 -->
+    <bean name="user1" class="com.dlj.entity.User">
+    	<constructor-arg name="name" value="jerry"></constructor-arg>
+    	<constructor-arg name="car" ref="car"></constructor-arg>
+    </bean>
+    <!-- p名称空间注入 -->
+    <bean name="user2" class="com.dlj.entity.User" p:name="jack" p:age="20"  p:car-ref="car"></bean>
+	<!-- Spel注入：spring3.x版本后提供的方式 -->
+	<bean name="user3" class="com.dlj.entity.User" >
+	<property name="name" value="#{user2.name}"></property>
+		<property name="age" value="18"></property>
+    	<!-- 为car属性注入下方配置的car对象 -->
+    	<property name="car" ref="car"></property>
+	</bean>
+<!-- ======================================== -->
+<!-- 复杂类型注入 -->
+<!-- array注入 -->
+<bean name="cb" class="com.dlj.c_injection.CollectionBean">
+<!-- 如果数组中只准备注入一个值(对象)，直接使用value|ref即可 -->
+	<property name="arr" >
+		<array>
+		   <value>"tom"</value>
+		   <value>"jerry"</value>
+		   <ref bean="user3"></ref>
+		</array>
+	</property>
+	
+	<!-- 如果list中只准备注入一个值(对象)，直接使用value|ref即可 -->
+<!-- <property name="list" value="1"></property> -->
+<property name="list" >
+
+	<list>
+	 <value>"toms"</value>
+		   <value>"jerrys"</value>
+		   <value>"jerryss"</value>
+		   <ref bean="user3"></ref>
+	</list>
+</property>
+	<!-- map类型注入 -->
+	<property name="map">
+		<map>
+			<entry key="url" value="www.baidu.com"></entry>
+			<entry key="car" value-ref="car"></entry>
+			<entry key-ref="user2" value-ref="car"> </entry>
+		</map>
+	</property>
+<!-- properties类型注入 -->
+<property name="prop">
+	<props>
+		<prop key="driverclass">wgagagla</prop>
+	</props>
+</property>
+</bean>
+
+
+
+
+</beans>

@@ -1,0 +1,48 @@
+package stringToInteger;
+
+import org.junit.Test;
+
+public class StringToInteger {
+	@Test
+	public void test() {
+		myAtoi("  se sd123 ");
+	}
+
+	public int myAtoi(String str) {
+		str = str.trim();
+		if (str.length() == 0) {
+			return 0;
+		} else {
+			if (str.charAt(0) > 127) {
+				return 0;
+			} else {
+				int len = 0;
+				// 遍历字符串str.charAt(len) >= 48 && str.charAt(len) <= 57
+				// 先找到第一个负号或者数字字符
+				while (len < str.length() && (str.charAt(len) < 48 || str.charAt(len) > 57)) {
+					len++;
+				}
+				// 找到第一个数字字符后，判断它的前面那个字符是不是负号字符
+				long temp = 0;
+				int flag = 1;
+				if (str.charAt(len - 1) == '-') {
+					flag = -1;
+				}
+				// 开始转换数字
+				temp =  Integer.parseInt(Character.toString(str.charAt(len++)));
+				while (len < str.length() && (str.charAt(len) >= 48 && str.charAt(len) <= 57)) {
+					temp = temp * 10 + Integer.parseInt(Character.toString(str.charAt(len++)));
+				}
+				System.out.println(temp);
+				return 0;
+			}
+		}
+
+		/*
+		 * while (() && len < str.length()) { len++; } // 当找到第一个数字字符的时候 //
+		 * 判断前面一个字符是不是负号 int temp = len - 1; if (str.charAt(temp) == '-') { temp
+		 * = -1; } else { temp = 1; } long l =
+		 * Integer.parseInt(Character.toString(str.charAt(0)));
+		 */
+	}
+}

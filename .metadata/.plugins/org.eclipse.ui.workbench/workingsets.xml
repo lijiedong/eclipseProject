@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935042494_1" label="hibernate" name="hibernate">
+<item elementID="=hibernateday01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hibernateday02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hibernateday03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=hibernateday04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935067551_2" label="struts" name="struts">
+<item elementID="=struts2_day01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=struts2_day02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=struts2_day03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=struts2_day04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935107419_3" label="spring" name="spring">
+<item elementID="=spring_day03tx" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=spring_day01" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=spring_day02" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=spring_day03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=spring_day04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935221408_4" label="otherWorkingSet" name="otherWorkingSet">
+<item elementID="=ch03" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ch04" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ch05" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ch01project" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ch02project" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935460638_7" label="Algorithm" name="Algorithm">
+<item elementID="=AlgorithmCode" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=leetCodeProject" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935492016_8" label="server" name="server">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/Servers" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935579065_10" label="mybatis" name="mybatis">
+<item elementID="=chapter4" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=mybatis32" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=chapter" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=mybatisDemo" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=logjtest" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=jdbc32" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1541768150869_0" label="Window Working Set" name="Aggregate for window 1541768150869"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935322530_5" label="Multiple Working Sets" name="Aggregate:hibernate:otherWorkingSet:spring:struts:">
+<workingSet IMemento.internal.id="hibernate"/>
+<workingSet IMemento.internal.id="otherWorkingSet"/>
+<workingSet IMemento.internal.id="spring"/>
+<workingSet IMemento.internal.id="struts"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935506740_9" label="Multiple Working Sets" name="Aggregate:Algorithm:hibernate:otherWorkingSet:server:spring:struts:">
+<workingSet IMemento.internal.id="Algorithm"/>
+<workingSet IMemento.internal.id="hibernate"/>
+<workingSet IMemento.internal.id="otherWorkingSet"/>
+<workingSet IMemento.internal.id="server"/>
+<workingSet IMemento.internal.id="spring"/>
+<workingSet IMemento.internal.id="struts"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1553935582427_11" label="Multiple Working Sets" name="Aggregate:Algorithm:hibernate:mybatis:otherWorkingSet:server:spring:struts:">
+<workingSet IMemento.internal.id="Algorithm"/>
+<workingSet IMemento.internal.id="hibernate"/>
+<workingSet IMemento.internal.id="mybatis"/>
+<workingSet IMemento.internal.id="otherWorkingSet"/>
+<workingSet IMemento.internal.id="server"/>
+<workingSet IMemento.internal.id="spring"/>
+<workingSet IMemento.internal.id="struts"/>
+</workingSet>
+</workingSetManager>

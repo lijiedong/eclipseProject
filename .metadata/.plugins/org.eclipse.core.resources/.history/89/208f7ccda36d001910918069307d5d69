@@ -1,0 +1,25 @@
+package testComparator;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class TestComparator {
+
+	public static void main(String[] args) {
+		List<Person> list = new ArrayList<>();
+		list.add(new Person(12));
+		list.add(new Person(9));
+		list.add(new Person(10));
+		list.add(new Person(22));
+		System.out.println("排序前：");
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i).age + "  ");
+		}
+		System.out.println("\/n排序后：");
+		Collections.sort(list);
+		for (int i = 0; i < list.size(); i++) {
+			System.out.print(list.get(i).age + "  ");
+		}
+	}
+}

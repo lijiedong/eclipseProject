@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;BinarySearch.java&apos; to &apos;algs4FourthEdition/src/algs4FourthEdition.ch01.ch02&apos;&#x0D;&#x0A;- Original project: &apos;test&apos;&#x0D;&#x0A;- Destination element: &apos;algs4FourthEdition/src/algs4FourthEdition.ch01.ch02&apos;&#x0D;&#x0A;- Original element: &apos;test.BinarySearch.java&apos;" description="Copy compilation unit" destination="=algs4FourthEdition/src&lt;algs4FourthEdition.ch01.ch02" element1="/src&lt;test{BinarySearch.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1546004645381" units="1" version="1.0"/>
+</session>

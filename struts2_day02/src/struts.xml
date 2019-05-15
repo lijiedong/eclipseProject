@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+	<struts >
+	<constant name="struts.devMode" value="true"></constant>
+		<package name="result" namespace="/" extends="struts-default" >
+			<action name="Demo1Action" class="com.dlj.a_result.Demo1Action" method="execute">
+				<result name="success" type="dispatcher">/hello.jsp</result>
+			</action>
+		</package>
+		<package name="result1" namespace="/" extends="struts-default" >
+			<action name="Demo2Action" class="com.dlj.a_result.Demo2Action" method="execute">
+				<result name="success" type="redirect">/hello.jsp</result>
+			</action>		
+		</package>
+		<!-- 转发到另外一个action -->
+		<package name="result2" namespace="/" extends="struts-default" >
+			<action name="Demo3Action" class="com.dlj.a_result.Demo3Action" method="execute">
+				<result name="success" type="chain">
+					<param name="actionName">Demo1Action</param>
+					<param  name="namespace">/</param>
+				</result>
+			</action>
+		</package>
+				<!-- 重定向到另外一个action -->
+				<package name="result3" namespace="/" extends="struts-default" >
+			<action name="Demo4Action" class="com.dlj.a_result.Demo4Action" method="execute">
+				<result name="success" type="redirectAction">
+					<param name="actionName">Demo1Action</param>
+					<param  name="namespace">/</param>
+				</result>
+			</action>
+		</package>
+		<include file="com/dlj/b_api/struts.xml"></include>
+		<include file="com/dlj/c_param/struts.xml"></include>
+	</struts>

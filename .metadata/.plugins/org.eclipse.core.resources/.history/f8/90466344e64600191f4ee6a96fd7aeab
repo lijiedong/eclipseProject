@@ -1,0 +1,33 @@
+package stringToInteger;
+
+import org.junit.Test;
+
+public class StringToInteger {
+	@Test
+	public void test() {
+		myAtoi("  se sd ");
+	}
+
+	public int myAtoi(String str) {
+		str = str.trim();
+		int len = 0;
+		// 遍历字符串
+		while (len < str.length()) {
+			// 先找到第一个负号或者数字字符
+			while ((str.charAt(len) < 48 || str.charAt(len) > 57) && len < str.length()) {
+				len++;
+			}
+			// 当找到第一个数字字符的时候
+			// 判断前面一个字符是不是负号
+			int temp = len - 1;
+			if (str.charAt(temp) == '-') {
+				temp = -1;
+			} else {
+				temp = 1;
+			}
+			long l = Integer.parseInt(Character.toString(str.charAt(0)));
+		}
+
+		return 0;
+	}
+}

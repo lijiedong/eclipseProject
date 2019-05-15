@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace：命名空间，用于隔离sql，还有一个很重要的作用，后面会讲 -->
+<!-- 写sql语句 -->
+<mapper namespace="test">
+<!-- id:statement的id 或者叫做sql的id-->
+	<!-- parameterType:声明输入参数的类型 -->
+	<!-- resultType:声明输出结果的类型，应该填写pojo的全路径 -->
+	<!-- #{}：输入参数的占位符，相当于jdbc的？ -->
+	<select id="findUserById" parameterType="int"
+		resultType="com.dlj.entity.User">
+		SELECT * FROM user WHERE id  = #{v}
+	</select>
+	<!-- //根据用户名称模糊查询用户列表
+	#{}    select * from user where id = ？    占位符  ? ==  '五'
+	${}    select * from user where username like '%五%'  字符串拼接  
+	
+	 -->
+	<select id="findUserByUsername" parameterType="String" resultType="com.dlj.entity.User">
+		select * from user where username like "%"#{haha}"%"
+	</select>
+</mapper>

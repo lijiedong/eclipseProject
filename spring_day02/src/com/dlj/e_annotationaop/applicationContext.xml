@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+     xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<!-- 1.配置目标对象 -->
+<!-- <bean name="userService" class="com.dlj.service.UserServiceImpl"></bean> -->
+<context:component-scan base-package="com.dlj.service"></context:component-scan>
+<!--2配置通知对象 -->
+<bean name="myAdvice" class="com.dljspringaop.MyAdvice"></bean>
+<!-- 3配置将通知织入目标对象 -->
+
+<!-- 配置切入点
+public void com.dlj.service.UserServiceImpl.save()
+ void com.dlj.service.UserServiceImpl.save()
+ * com.dlj.service.UserServiceImpl.save()
+ * com.dlj.service.UserServiceImpl.*     //为这个类下面的所有方法都配置切入点，但是是空参
+ *  com.dlj.service.UserServiceImpl.*(..) 
+  * com.dlj.service.*ServiceImpl.*(..) //service包下所有以ServiceImpl结尾的
+  * com.dlj.service..*ServiceImpl.*(..) //不仅找service包下，同时还有他的子包
+ -->
+
+<!-- <aop:pointcut expression="execution(* com.dlj.service.*ServiceImpl.*(..) )" id="pc"/>
+<aop:config>
+<aop:aspect ref="myAdvice">
+	指定名为before的方法作为前置通知
+	<aop:before method="before" pointcut-ref="pc"/>
+	后置
+	<aop:after-returning method="afterReturning" pointcut-ref="pc"/>
+	环绕
+	<aop:around method="around"  pointcut-ref="pc"/>
+	异常
+	<aop:after-throwing method="afterException" pointcut-ref="pc"/>
+	后置
+	<aop:after method="after" pointcut-ref="pc"/>
+</aop:aspect>
+
+</aop:config> -->
+</beans>

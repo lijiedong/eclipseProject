@@ -1,0 +1,15 @@
+package stringToInteger;
+
+import org.junit.Test;
+
+public class StringToInteger {
+	@Test
+	public void test() {
+		myAtoi("  se");
+	}
+
+	public int myAtoi(String str) {
+		System.out.println(str.trim());
+		return 0;
+	}
+}

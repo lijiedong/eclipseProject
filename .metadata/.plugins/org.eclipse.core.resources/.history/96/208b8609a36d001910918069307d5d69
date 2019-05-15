@@ -1,0 +1,28 @@
+package testComparator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TestComparator {
+	public class Person implements Comparable<Person> {
+		int age;
+
+		public Person(int age) {
+
+			this.age = age;
+		}
+
+		@Override
+		public int compareTo(Person person) {
+			// TODO Auto-generated method stub
+			return this.age - person.age;
+		}
+
+	}
+
+	public static void main(String[] args) {
+		List<Person> list = new ArrayList<>(10);
+		list.add(new Person(12));
+		
+	}
+}

@@ -1,0 +1,12 @@
+package testComparator;
+
+public class TestComparator {
+	public class person implements Comparable {
+		int age;
+
+		public person(int age) {
+			this.age = age;
+		}
+
+	}
+}
